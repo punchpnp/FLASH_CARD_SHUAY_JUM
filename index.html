@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CARD-SHUAY-JUM</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&display=swap");
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ก้อน main Page -->
+    <div class="right-button">
+      <div>
+        <!-- ปุ่มเพิ่ม -->
+        <img
+          id="show"
+          class="button-red-green"
+          src="image/png-add.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <!-- ปุ่มลบ -->
+        <img
+          id="clear"
+          class="button-red-green"
+          src="image/png-deletee.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="left-button">
+      <div>
+        <!-- sound effect -->
+        <audio id="background-music" loop>
+          <source src="image/sea-sound.wav" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+
+        <div id="toggle-sound" class="btn-sound2">
+          <img
+            class="btn-sound2"
+            src="image/sound-off.png"
+            id="sound-on-img"
+            alt="Sound On"
+          />
+          <img
+            class="btn-sound2"
+            src="image/sound-on.png"
+            id="sound-off-img"
+            alt="Sound Off"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- หัวข้อ -->
+    <div class="headdiv">
+      <img class="header-mes" src="image/test.png" alt="" />
+    </div>
+
+    <!-- แผ่นการ flip -->
+    <div class="card-container cards" id="card-container"></div>
+
+    <!-- เลื่อนซ้ายขวา -->
+    <div class="navigation">
+      <button id="prev" class="nav-button">
+        <!-- <i class="fas fa-arrow-left"></i> -->
+        <img class="arrow" src="image/png-left.png" alt="left-arrow" />
+      </button>
+
+      <p class="current" id="current"></p>
+
+      <button id="next" class="nav-button">
+        <!-- <i class="fas fa-arrow-right"></i> -->
+        <img class="arrow" src="image/png-right.png" alt="right-arrow" />
+      </button>
+    </div>
+
+    <!-- เพิ่มคำถาม -->
+
+    <div class="add-container" id="add-container">
+      <div class="more-question">
+        <h3>
+          ADD NEW CARD
+          <button id="btn-hidden" class="btn btn-small btn-hidden">
+            <img class="btn-closed" src="image/png-closed.png" alt="" />
+          </button>
+        </h3>
+
+        <div class="balance">
+          <div class="form-group">
+            <label for="">Question</label>
+
+            <textarea
+              id="question"
+              placeholder="Example : เขียนโปรแกรมรับค่าจำนวนเต็มไปเรื่อยๆจนหมด"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="balance">
+          <div class="form-group">
+            <label for="">Answer</label>
+
+            <textarea
+              id="answer"
+              placeholder="(( write the code answer ))"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="balance">
+          <button id="add-card" class="btn-add">ADD CARD</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ก้อน popup learn space -->
+    <button class="btn-learnspace" id="openPopup2">Learn Space</button>
+
+    <div class="popup-container" id="popupContainer">
+      <div class="popup-content2">
+        <div class="header">
+          <span class="close-button2" id="closePopup2">&times;</span>
+          <h1 class="color-learn">LEARN SPACE</h1>
+        </div>
+
+        <!-- 1 -->
+        <div class="content-item">
+          <iframe
+            class="left-frame"
+            src="https://www.youtube.com/embed/goSe5Ufg00I"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <div class="message-learn">
+            <h1>
+              <input class="checky" type="checkbox" name="" id="" /> Section 1
+            </h1>
+            <p>If-Else</p>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="content-item">
+          <iframe
+            class="left-frame"
+            src="https://www.youtube.com/embed/d24f5ODJgHA"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <div class="message-learn">
+            <h1><input type="checkbox" name="" id="" /> Section 2</h1>
+            <p>While-Loop</p>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="content-item">
+          <iframe
+            class="left-frame"
+            src="https://www.youtube.com/embed/cHhnCSirOys"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <div class="message-learn">
+            <h1><input type="checkbox" name="" id="" /> Section 3</h1>
+            <p>For-Loop</p>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="content-item">
+          <iframe
+            class="left-frame"
+            src="https://www.youtube.com/embed/ntJoYPBJ0r8"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <div class="message-learn">
+            <h1><input type="checkbox" name="" id="" /> Section 4</h1>
+            <p>Function (Basic)</p>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="content-item">
+          <iframe
+            class="left-frame"
+            src="https://www.youtube.com/embed/_cGoNI9UCp8"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <div class="message-learn">
+            <h1><input type="checkbox" name="" id="" /> Section 5</h1>
+            <p>Array</p>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="content-item">
+          <iframe
+            class="left-frame"
+            src="https://www.youtube.com/embed/BvedOerXC2U"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <div class="message-learn">
+            <h1><input type="checkbox" name="" id="" /> Section 6</h1>
+            <p>Recursive Function</p>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="content-item">
+          <iframe
+            class="left-frame"
+            src="https://www.youtube.com/embed/wmk5fRVwVHs"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <div class="message-learn">
+            <h1><input type="checkbox" name="" id="" /> Section 7</h1>
+            <p>Tuple and Pair</p>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="content-item">
+          <iframe
+            class="left-frame"
+            src="https://www.youtube.com/embed/MkV2eDeFM0g"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <div class="message-learn">
+            <h1><input type="checkbox" name="" id="" /> Section 8</h1>
+            <p>Vector</p>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="content-item">
+          <iframe
+            class="left-frame"
+            src="https://www.youtube.com/embed/7TlNCDN5vBM"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <div class="message-learn">
+            <h1><input type="checkbox" name="" id="" /> Section 9</h1>
+            <p>Set</p>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="content-item">
+          <iframe
+            class="left-frame"
+            src="https://www.youtube.com/embed/4ULS4kcDLyI"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <div class="message-learn">
+            <h1><input type="checkbox" name="" id="" /> Section 10</h1>
+            <p>Map</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
